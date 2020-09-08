@@ -41,6 +41,21 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: () => import(/* webpackChuckName: "About" */ './views/About.vue')
+        },
+        {
+            path: '/partners',
+            name: 'partners',
+            component: () => import(/* webpackChuckName: "Partners" */ './views/Partners.vue')
+        },
+        {
+            path: '/results',
+            name: 'results',
+            component: () => import(/* webpackChuckName: "Results" */ './views/Results.vue')
+        },
+        {
+            path: '/contact',
+            name: 'contact',
+            component: () => import(/* webpackChuckName: "Contact" */ './views/Contact.vue')
         }
     ]
 })

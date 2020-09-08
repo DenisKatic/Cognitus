@@ -13,30 +13,18 @@
           <Menu />
         </v-flex>
         <v-flex xs12 style="background:white; padding-bottom:20px">
-          <router-view style="min-height:800px;" />
+          <router-view style="min-height:500px;" />
         </v-flex>
         <v-flex xs12 style="margin-top:20px">
         </v-flex>
         <v-flex xs12>
-          <v-layout wrap text-center text-xs-center justify-center fill-height align-center>
-            <v-flex xs1>
-            </v-flex>
-            <v-flex xs2>
-              <img src="./assets/swarovski.png" height="50px" />
-            </v-flex>
-            <v-flex xs2>
-              <img src="./assets/spar-logo.jpg" height="50px" />
-            </v-flex>
-            <v-flex xs2>
-              <img src="./assets/lm-logo-small-2.png" height="50px" />
-            </v-flex>
-            <v-flex xs2>
-              <img src="./assets/fraunhofer.png" height="50px" />
-            </v-flex>
-            <v-flex xs2>
-              <img src="./assets/ait_logo.jpg" height="50px" />
-            </v-flex>
-            <v-flex xs1>
+          <v-layout wrap text-left text-xs-left justify-center fill-height align-center style="margin-left:130px;padding-bottom:20px;color:white;">
+            <v-flex xs12>
+              COGNITUS maintained by <a href="https://github.com/behas" style="color:white">Dr. Bernhard Haslhofer</a>
+              <br>
+              Last update: {{text_data.last_update}}
+              <br>
+              Published with <a href="https://pages.github.com/" style="color:white">GitHub Pages</a> 
             </v-flex>
           </v-layout>
         </v-flex>
@@ -48,6 +36,7 @@
 <script>
 //import Home from './views/Home';
 import Menu from './components/Menu';
+import axios from "axios";
 
 export default {
   name: 'App',
@@ -56,9 +45,27 @@ export default {
     Menu
   },
 
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      text_data: undefined
+    }
+  },
+  mounted() {
+    this.load_data();
+  },
+  methods: {
+    async load_data(){
+      try{
+        let req_data = await axios.get("/data.json");
+        debugger;
+        if(req_data && req_data.data && req_data.data.partners)
+          this.text_data = req_data.data;
+        
+      }catch(e){
+        console.error(e);
+      }
+    }
+  }
 };
 </script>
 

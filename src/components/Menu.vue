@@ -19,36 +19,39 @@
               </v-btn>
             </template>
           </v-menu>
-          <v-menu top :offset-y="offset">
+          <v-menu top >
             <template v-slot:activator="{ on }">
               <v-btn
                 color="primary"
                 dark
                 v-on="on"
+                @click="open_partners"
               >
-                Topics
+                Partners
               </v-btn>
             </template>
-
-            <v-list>
-              <v-list-item
-                v-for="(item, index) in topics"
-                :key="index"
-                @click="item.topic_func()"
-              >
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item>
-            </v-list>
           </v-menu>
-            <v-menu top >
+          <v-menu top >
             <template v-slot:activator="{ on }">
               <v-btn
                 color="primary"
                 dark
                 v-on="on"
-                @click="open_about"
+                @click="open_results"
               >
-                About
+                Results
+              </v-btn>
+            </template>
+          </v-menu>
+          <v-menu top >
+            <template v-slot:activator="{ on }">
+              <v-btn
+                color="primary"
+                dark
+                v-on="on"
+                @click="open_contact"
+              >
+                Contact
               </v-btn>
             </template>
           </v-menu>
@@ -96,24 +99,16 @@ export default {
     open_home(){
       this.$router.push({name: "home"});
     },
-    open_industry(){
-      this.$router.push({name:"industry"});
+    open_partners(){
+      this.$router.push({name: "partners"});
     },
-    open_data_collection(){
-      this.$router.push({name:"data_collection"});
+    open_results(){
+      this.$router.push({name: "results"});
     },
-    open_ai(){
-      this.$router.push({name: "ai"});
+    open_contact(){
+      this.$router.push({name: "contact"});
     },
-    open_maintenance(){
-      this.$router.push({name:"maintenance"});
-    },
-    open_benefits(){
-      this.$router.push({name:"benefits"});
-    },
-    open_about(){
-      this.$router.push({name:"about"});
-    },
+
     help_interval(){
       this.help_question = !this.help_question;
     },

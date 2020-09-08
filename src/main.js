@@ -2,10 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import router from './router'
-//import Axios from 'axios'
+import Axios from 'axios'
 
 Vue.config.productionTip = false
-//Axios.defaults.baseURL = 'http://localhost:5000/';
+//Axios.defaults.baseURL = 'http://localhost:8080/cognitus/';
+Axios.defaults.baseURL = 'https://deniskatic.github.io/cognitus/';
+
 
 new Vue({
   router,

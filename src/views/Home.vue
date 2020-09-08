@@ -183,9 +183,7 @@ export default {
   methods: {
     async load_data(){
       try{
-        debugger;
         let req_data = await axios.get("/data.json");
-        debugger;
         if(req_data && req_data.data && req_data.data.home)
           this.text_data = req_data.data.home;
         
