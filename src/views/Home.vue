@@ -11,7 +11,7 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12>
+      <!--v-flex xs12>
         <v-layout wrap>
           <v-flex xs12 md5>
             <v-layout wrap>
@@ -153,7 +153,7 @@
             </v-layout>
           </v-flex>
         </v-layout>
-      </v-flex>
+      </v-flex-->
     </v-layout>
   </v-container>
 </template>
@@ -178,7 +178,7 @@ export default {
   },
   mounted() {
     this.load_data();
-    this.start_interval();
+    //this.start_interval();
   },
   methods: {
     async load_data(){

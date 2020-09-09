@@ -5,7 +5,7 @@
         <v-flex xs12 text-center text-xs-center justify-center fill-height align-center style="height:100px">
           <div class="header_div">
             <span class="header_span">
-              Welcome to Cognitus
+              COGNITUS - Deep Learnig Methods for Predicting Outages of Industrial Assets
             </span>
           </div>
         </v-flex>
@@ -57,7 +57,6 @@ export default {
     async load_data(){
       try{
         let req_data = await axios.get("/data.json");
-        debugger;
         if(req_data && req_data.data && req_data.data.partners)
           this.text_data = req_data.data;
         
