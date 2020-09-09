@@ -4,8 +4,8 @@
       <v-layout wrap>
         <v-flex xs12 text-center text-xs-center justify-center fill-height align-center style="height:100px">
           <div class="header_div">
-            <span class="header_span">
-              COGNITUS - Deep Learnig Methods for Predicting Outages of Industrial Assets
+            <span class="header_span" style="font-size:40px">
+              COGNITUS </span><span class="header_span" style="font-size:25px;" align="center">- Deep Learnig Methods for Predicting Outages of Industrial Assets
             </span>
           </div>
         </v-flex>

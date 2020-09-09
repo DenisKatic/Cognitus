@@ -173,6 +173,7 @@ export default {
         maintenance: "Maintenance text.....",
         benefits: "Benefits text .......",
         project_description: "Placeholder for project description text ....",
+        home:undefined
       }
     }
   },
