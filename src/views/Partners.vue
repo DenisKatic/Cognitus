@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md style="margin-top:20px" justify-center fill-height align-center>
     <v-layout wrap >
-      <v-flex xs12 style="margin-left:60px;margin-right:80px;margin-top:5px; margin-bottom:20px" >
+      <v-flex xs12 style="margin-left:35px;margin-right:80px;margin-top:5px; margin-bottom:20px" >
         <v-layout wrap>
           <v-flex xs12>
             <h2>Project Partners</h2>
@@ -9,7 +9,7 @@
           <v-flex xs12>
             <hr>
           </v-flex>
-          <v-flex xs12 v-for="item in text_data" :key="item">
+          <v-flex xs12 v-for="item in text_data" :key="item.name">
             <br>
             <v-layout wrap align-center>
               <v-flex xs12>

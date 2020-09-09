@@ -2,29 +2,49 @@
   <v-app style="background-color: white;">
     <v-content class="background_image">
       <v-layout wrap>
-        <v-flex xs12 text-center text-xs-center justify-center fill-height align-center style="height:100px">
-          <div class="header_div">
-            <span class="header_span" style="font-size:40px">
-              COGNITUS </span><span class="header_span" style="font-size:25px;" align="center">- Deep Learnig Methods for Predicting Outages of Industrial Assets
-            </span>
-          </div>
+        <v-flex xs12  justify-center fill-height align-center style="min-height:80px">
+          <v-container grid-list-md justify-center fill-height align-center>
+          <v-layout wrap>
+            <v-flex xs12>
+              <v-layout wrap >
+                <v-flex xs12 style="margin-left:28px;margin-right:80px;">
+                  <div class="header_div">
+                    <span class="header_span" style="font-size:40px">
+                      COGNITUS </span><span class="header_span" style="font-size:25px;" align="center">- Deep Learnig Methods for Predicting Outages of Industrial Assets
+                    </span>
+                  </div>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+          </v-container>
         </v-flex>
         <v-flex xs12 >
           <Menu />
         </v-flex>
-        <v-flex xs12 style="background:white; padding-bottom:20px">
+        <v-flex xs12 style="background:white; padding-bottom:20px;">
           <router-view style="min-height:500px;" />
         </v-flex>
         <v-flex xs12 style="margin-top:20px">
         </v-flex>
         <v-flex xs12>
-          <v-layout wrap text-left text-xs-left justify-center fill-height align-center style="margin-left:130px;padding-bottom:20px;color:white;">
+          <v-layout wrap  justify-center fill-height align-center style="padding-bottom:20px;color:white;">
             <v-flex xs12>
-              COGNITUS maintained by <a href="https://github.com/behas" style="color:white">Dr. Bernhard Haslhofer</a>
-              <br>
-              Last update: {{text_data.last_update}}
-              <br>
-              Published with <a href="https://pages.github.com/" style="color:white">GitHub Pages</a> 
+              <v-container grid-list-md justify-center fill-height align-center>
+                <v-layout wrap>
+                  <v-flex xs12>
+                    <v-layout wrap >
+                      <v-flex xs12 style="margin-left:28px;margin-right:80px;margin-bottom:20px">
+                        COGNITUS maintained by <a href="https://github.com/behas" style="color:white">Dr. Bernhard Haslhofer</a>
+                        <br>
+                        Last update: {{text_data.last_update}}
+                        <br>
+                        Published with <a href="https://pages.github.com/" style="color:white">GitHub Pages</a>
+                      </v-flex>
+                    </v-layout>
+                  </v-flex>
+                </v-layout>
+              </v-container>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -47,7 +67,9 @@ export default {
 
   data() {
     return {
-      text_data: undefined
+      text_data: {
+        last_update: undefined
+      }
     }
   },
   mounted() {
@@ -71,6 +93,7 @@ export default {
 <style>
 .background_image {
   background: url("./assets/AI-background.jpg");
+  background-size: cover;
 }
 .background_image_2 {
   /*background: url("./assets/AI-background.jpg") no-repeat left top, linear-gradient(black, white);*/
@@ -97,7 +120,7 @@ export default {
   color:white;
 }
 .header_div {
-  margin-top:60px;
+  margin-top:30px;
 }
 span {
   font-size: 18px;

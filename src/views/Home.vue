@@ -6,7 +6,7 @@
           <!--v-flex xs11 style="margin-left:60px;">
             Project description:
           </v-flex-->
-          <v-flex xs12 style="margin-left:60px;margin-right:80px;margin-top:5px; margin-bottom:20px">
+          <v-flex xs12 style="margin-left:35px;margin-right:80px;margin-top:5px; margin-bottom:20px">
             <span v-html="text_data.project_description" />
           </v-flex>
         </v-layout>
@@ -172,8 +172,7 @@ export default {
         ai: "Artificial Intelligence text.....",
         maintenance: "Maintenance text.....",
         benefits: "Benefits text .......",
-        project_description: "Placeholder for project description text ....",
-        home:undefined
+        project_description: "Placeholder for project description text ...."
       }
     }
   },

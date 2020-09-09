@@ -1,7 +1,7 @@
 <template>
-  <v-container grid-list-md style="margin-top:20px" justify-center fill-height align-center>
+  <v-container grid-list-md style="margin-top:-10px" justify-center fill-height align-center>
     <v-layout wrap>
-      <v-flex xs12 style="margin-left:50px">
+      <v-flex xs12 style="margin-left:30px">
         <v-card
           flat
           height="38px"
