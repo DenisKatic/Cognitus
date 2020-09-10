@@ -10,7 +10,7 @@
                 <v-flex xs12 style="margin-left:28px;margin-right:80px;">
                   <div class="header_div">
                     <span class="header_span" style="font-size:40px">
-                      COGNITUS </span><span class="header_span" style="font-size:25px;" align="center">- Deep Learnig Methods for Predicting Outages of Industrial Assets
+                      COGNITUS </span><span class="header_span" style="font-size:25px;" align="center">- Deep Learning Methods for Predicting Outages of Industrial Assets
                     </span>
                   </div>
                 </v-flex>
