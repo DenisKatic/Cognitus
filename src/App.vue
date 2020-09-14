@@ -8,14 +8,14 @@
             <v-flex xs12>
               <v-layout wrap >
                 <v-flex xs12 style="margin-left:28px;margin-right:80px;padding-top:10px">
-                  <div >
-                  <span class="header_span" style="font-size:45px;vertical-align: middle" align="center">
-                    COGNITUS
-                  </span>
-                  <img src="./assets/cognitus_graph.png" style="padding-top:10px;height:45px;vertical-align: middle"/>
-                  <span class="header_span" style="font-size:25px;vertical-align: middle" align="center">
-                     - Deep Learning Methods for Predicting Outages of Industrial Assets
+                  <div style="vertical-align: middle">
+                    <span class="header_span" style="font-size:45px;vertical-align: middle">
+                      COGNITUS
                     </span>
+                    <img src="./assets/cognitus_graph.png" style="height:45px;vertical-align: middle"/>
+                    <span class="header_span" style="font-size:25px;vertical-align: middle" >
+                      - Deep Learning Methods for Predicting Outages of Industrial Assets
+                      </span>
                   </div>
                 </v-flex>
               </v-layout>
