@@ -3,14 +3,18 @@
     <v-content class="background_image">
       <v-layout wrap>
         <v-flex xs12  justify-center fill-height align-center style="min-height:80px">
-          <v-container grid-list-md justify-center fill-height align-center>
+          <v-container grid-list-md justify-center fill-height align-center >
           <v-layout wrap>
             <v-flex xs12>
               <v-layout wrap >
-                <v-flex xs12 style="margin-left:28px;margin-right:80px;">
-                  <div class="header_div">
-                    <span class="header_span" style="font-size:40px">
-                      COGNITUS </span><span class="header_span" style="font-size:25px;" align="center">- Deep Learning Methods for Predicting Outages of Industrial Assets
+                <v-flex xs12 style="margin-left:28px;margin-right:80px;padding-top:10px">
+                  <div >
+                  <span class="header_span" style="font-size:45px;vertical-align: middle" align="center">
+                    COGNITUS
+                  </span>
+                  <img src="./assets/cognitus_graph.png" style="padding-top:10px;height:45px;vertical-align: middle"/>
+                  <span class="header_span" style="font-size:25px;vertical-align: middle" align="center">
+                     - Deep Learning Methods for Predicting Outages of Industrial Assets
                     </span>
                   </div>
                 </v-flex>
