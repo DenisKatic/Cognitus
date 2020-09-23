@@ -6,7 +6,7 @@ import Axios from 'axios'
 
 Vue.config.productionTip = false
 //Axios.defaults.baseURL = 'http://localhost:8080/cognitus/';
-Axios.defaults.baseURL = 'https://deniskatic.github.io/cognitus/';
+Axios.defaults.baseURL = 'https://cognitus-project.info/';
 
 
 new Vue({

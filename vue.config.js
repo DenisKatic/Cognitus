@@ -1,5 +1,5 @@
 module.exports = {
-  "publicPath": '/cognitus/',
+  "publicPath": '',
   "transpileDependencies": [
     "vuetify"
   ]
