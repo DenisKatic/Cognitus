@@ -3,15 +3,15 @@
     <v-layout wrap >
       <v-flex xs12 style="margin-left:35px;margin-right:80px;margin-top:5px; margin-bottom:20px" >
         <v-layout wrap>
-          <v-flex xs12>
-            <h2>Project Partners</h2>
+          <v-flex xs12 >
+            <h2 style="color:white">Project Partners</h2>
           </v-flex>
           <v-flex xs12>
-            <hr>
+            <hr style="color:white;">
           </v-flex>
           <v-flex xs12 v-for="item in text_data" :key="item.name">
             <br>
-            <v-layout wrap align-center>
+            <v-layout wrap align-center style="background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
               <v-flex xs12>
                 <a :href=item.link>{{ item.name }}</a>
               </v-flex>

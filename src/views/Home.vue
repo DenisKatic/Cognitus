@@ -6,7 +6,7 @@
           <!--v-flex xs11 style="margin-left:60px;">
             Project description:
           </v-flex-->
-          <v-flex xs12 style="margin-left:35px;margin-right:80px;margin-top:5px; margin-bottom:20px">
+          <v-flex xs12 style="margin-left:35px;margin-right:80px;margin-top:5px; margin-bottom:20px; background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
             <span v-html="text_data.project_description" />
           </v-flex>
         </v-layout>

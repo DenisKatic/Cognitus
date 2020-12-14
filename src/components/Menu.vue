@@ -10,7 +10,7 @@
           <v-menu top >
             <template v-slot:activator="{ on }">
               <v-btn
-                color="primary"
+                color="#5c939a"
                 dark
                 v-on="on"
                 @click="open_home"
@@ -22,7 +22,7 @@
           <v-menu top >
             <template v-slot:activator="{ on }">
               <v-btn
-                color="primary"
+                color="#5c939a"
                 dark
                 v-on="on"
                 @click="open_partners"
@@ -34,7 +34,7 @@
           <v-menu top >
             <template v-slot:activator="{ on }">
               <v-btn
-                color="primary"
+                color="#5c939a"
                 dark
                 v-on="on"
                 @click="open_results"
@@ -46,7 +46,7 @@
           <v-menu top >
             <template v-slot:activator="{ on }">
               <v-btn
-                color="primary"
+                color="#5c939a"
                 dark
                 v-on="on"
                 @click="open_contact"
@@ -125,5 +125,8 @@ export default {
 
 };
 </script>
-<style scoped>
+<style>
+.v-btn{
+  background-color:red;
+}
 </style>

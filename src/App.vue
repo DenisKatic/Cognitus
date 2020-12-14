@@ -1,20 +1,20 @@
 <template>
-  <v-app style="background-color: white;">
+  <v-app>
     <v-content class="background_image">
       <v-layout wrap>
         <v-flex xs12  justify-center fill-height align-center style="min-height:80px">
-          <v-container grid-list-md justify-center fill-height align-center >
+          <v-container grid-list-md justify-center fill-height align-center> <!-- style="background-color: white;"-->
           <v-layout wrap>
             <v-flex xs12>
               <v-layout wrap >
                 <v-flex xs12 style="margin-left:28px;margin-right:80px;padding-top:10px">
                   <div style="vertical-align: middle">
-                    <span class="header_span" style="font-size:45px;vertical-align: middle">
+                    <span class="header_span" style="font-size:45px;vertical-align: middle; font-family: sofia-pro, sans-serif; font-weight: 700; font-style: normal;        ">
                       COGNITUS
                     </span>
-                    <img src="./assets/cognitus_graph.png" style="height:45px;vertical-align: middle"/>
+                    <img src="./assets/COGNITUS_LOGO_BUNT_RGB.svg" style="height:auto; width:100px;vertical-align: middle"/>
                     <span class="header_span" style="font-size:25px;vertical-align: middle" >
-                      - Deep Learning Methods for Predicting Outages of Industrial Assets
+                      Deep Learning Methods for Predicting Outages of Industrial Assets
                       </span>
                   </div>
                 </v-flex>
@@ -26,7 +26,7 @@
         <v-flex xs12 >
           <Menu />
         </v-flex>
-        <v-flex xs12 style="background:white; padding-bottom:20px;">
+        <v-flex xs12 style="padding-bottom:20px;" >
           <router-view style="min-height:500px;" />
         </v-flex>
         <v-flex xs12 style="margin-top:20px">
@@ -95,9 +95,15 @@ export default {
 </script>
 
 <style>
+.v-application{
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;           
+}
+
 .background_image {
-  background: url("./assets/AI-background.jpg");
-  background-size: cover;
+  background-image: url("./assets/VISUAL_04_RGB_exp.svg"), linear-gradient(#9b9b9b, #1a1a1a); /* W3C */
+  background-size: 100% auto;/*cover;*/
 }
 .background_image_2 {
   /*background: url("./assets/AI-background.jpg") no-repeat left top, linear-gradient(black, white);*/

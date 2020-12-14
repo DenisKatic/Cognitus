@@ -4,18 +4,18 @@
       <v-flex xs12 style="margin-left:35px;margin-right:80px;margin-top:5px; margin-bottom:20px">
         <v-layout wrap>
           <v-flex xs12>
-            <h2>Results</h2>
+            <h2 style="color:white">Results</h2>
           </v-flex>
           <v-flex xs12>
-            <hr>
+            <hr style="color:white;">
           </v-flex>
-          <v-flex xs12 style="padding-top:20px">
+          <v-flex xs12 style="margin-top:20px;background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
             Within the COGNITUS project, the following results were achieved:
           </v-flex>
           <v-flex xs12 style="padding-top:20px">
-            <h4>Publications:</h4>
+            <h3 style="color:white">Publications:</h3>
           </v-flex>
-          <v-flex xs12 v-for="item in text_data" :key="item" style="padding-top:10px">
+          <v-flex xs12 v-for="item in text_data" :key="item" style="margin-top:10px; background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
             <span v-html="item" />
           </v-flex>
         </v-layout>
