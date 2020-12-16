@@ -12,7 +12,7 @@
                     <span class="header_span" style="font-size:45px;vertical-align: middle; font-family: sofia-pro, sans-serif; font-weight: 700; font-style: normal;        ">
                       COGNITUS
                     </span>
-                    <img src="./assets/COGNITUS_LOGO_BUNT_RGB.svg" style="height:auto; width:100px;vertical-align: middle"/>
+                    <img src="./assets/COGNITUS_NUR_LOGO_WEISS.svg" style="height:auto; width:100px;vertical-align: middle"/>
                     <span class="header_span" style="font-size:25px;vertical-align: middle" >
                       Deep Learning Methods for Predicting Outages of Industrial Assets
                       </span>
