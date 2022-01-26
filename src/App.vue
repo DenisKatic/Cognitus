@@ -32,13 +32,13 @@
         <v-flex xs12 style="margin-top:20px">
         </v-flex>
         <v-flex xs12>
-          <v-layout wrap  justify-center fill-height align-center style="padding-bottom:20px;color:white;">
+          <v-layout wrap  justify-center fill-height align-center style="padding-bottom:20px;color:white;margin-right:140px">
             <v-flex xs12>
               <v-container grid-list-md justify-center fill-height align-center>
                 <v-layout wrap>
-                  <v-flex xs12>
+                  <v-flex xs6>
                     <v-layout wrap >
-                      <v-flex xs12 style="margin-left:28px;margin-right:80px;margin-bottom:20px">
+                      <v-flex xs12 style="margin-left:28px;margin-right:80px;margin-bottom:10px;margin-top:18px;padding-left: 70px;">
                         COGNITUS maintained by <a href="https://github.com/behas" style="color:white">Dr. Bernhard Haslhofer</a>
                         <br>
                         Last update: {{text_data.last_update}}
@@ -46,6 +46,23 @@
                         Published with <a href="https://pages.github.com/" style="color:white">GitHub Pages</a>
                       </v-flex>
                     </v-layout>
+                  </v-flex>
+                  <v-flex xs6 style="background-color: rgba(255, 255, 255, 0.85); border-radius: 8px;color:black">
+                    <v-layout wrap align-center >
+                      <v-flex xs3 style="text-align: center;">
+                        Funded or financed in the 
+                        <br>
+                        <b>"ICT of the Future"</b> 
+                        <br>
+                        program by the
+                      </v-flex>
+                      <v-flex xs5 justify-center style="text-align: center;">
+                        <img src="./assets/BMK_Logo_srgb_EN.svg" style="height:auto; width:250px;vertical-align: middle"/>
+                      </v-flex>
+                      <v-flex xs4 justify-center style="text-align: center;">
+                        <img src="./assets/ffg_logo_en.svg" style="height:auto; width:200px;vertical-align: middle"/>
+                      </v-flex>
+                     </v-layout>
                   </v-flex>
                 </v-layout>
               </v-container>

@@ -15,8 +15,22 @@
           <v-flex xs12 style="padding-top:20px">
             <h3 style="color:white">Publications:</h3>
           </v-flex>
-          <v-flex xs12 v-for="item in text_data" :key="item" style="margin-top:10px; background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
-            <span v-html="item" />
+          <v-flex xs12 style="margin-top:10px; background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
+            <ul >
+              <li v-for="item in text_data.publications" :key="item">
+                <span v-html="item" />
+              </li>
+            </ul>
+          </v-flex>
+          <v-flex xs12 style="padding-top:20px">
+            <h3 style="color:white">Talks:</h3>
+          </v-flex>
+          <v-flex xs12 style="margin-top:10px; background-color: rgba(255, 255, 255, 0.75); border-radius: 8px;">
+            <ul >
+              <li v-for="item in text_data.talks" :key="item">
+                <span v-html="item" />
+              </li>
+            </ul>
           </v-flex>
         </v-layout>
       </v-flex>
