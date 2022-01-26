@@ -34,7 +34,15 @@
             "logo": "swarovski.png"
         }
     ],
-    "results": [
-        "to be announced"
-    ]
+    "results": {
+        "publications": [
+            "Kovacs et al. (2021): \"<b>A multi-level model for realizing data-driven maintenance in manufacturing enterprises: Use case of jewelry production</b>\". CIRP CRM 2021"
+        ],
+        "talks": [
+            "C. Heistracher, J. Schneeweis, E. Altenberger. \"<b>Health-Index Prediction and Maintenance-Optimization in Coating Chambers.</b>\" Platform Industrie 4.0 (2022-01-20)",
+            "B. Haslhofer, F. Zagler, J. Giner, D. Katic. \"<b>Detection of Anomalous Pallets in a High-Bay Warehouse.</b>\" Platform Industrie 4.0 (2022-01-20)",
+            "B. Haslhofer, C. Heistracher. \"<b>Anomaly Detection in Industrial Data Science.</b>\" Platform Industrie 4.0 (2020-06-05)",
+            "C. Laflamme: \"<b>Projekt COGNITUS Deep Learning in Produktion und Logistik – wie Verfahren des maschinellen Lernens in bestehende Entscheidungsprozesse integriert werden können</b>\", Catherine Laflamme | Fraunhofer Austria, Wattens (2019-10-29)"
+        ]
+    }
 }
